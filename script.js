@@ -1,7 +1,7 @@
 function convertCGPA() {
     var cgpa = document.getElementById("cgpa_input").value;
     if (cgpa == "") {
-        document.getElementById("error_msg").innerHTML = "Enter valid CGPA (i.e. between 0 & 10)";
+        document.getElementById("error_msg").innerHTML = "Please enter valid CGPA (i.e. between 0 & 10)";
         return;
     }
     var cgpa = Number(cgpa);
@@ -63,7 +63,6 @@ function convertCGPA() {
     document.getElementById("op_per").innerHTML = per;
     document.getElementById("op_class").innerHTML = cls;
 }
-// Click convert button when enter is pressed in input field
 document.getElementById("cgpa_input").addEventListener("keypress", function (event) {
     if (event.key === 'Enter') {
         event.preventDefault();
